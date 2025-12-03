@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <!--Заголовок-->
+	 <title>Карта Уральского Федерального округа</title>
+	 <!--Подключаем Leaflet-->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css"/>
+	 <script src="https://unpkg.com/leaflet@1.9.0/dist/leaflet.js"></script>
+  <!--Подключаем плагин leaflet-choropleth-->
+	 <script src="https://unpkg.com/leaflet-choropleth/dist/choropleth.js"></script>
+	  <!--Подключаем плагин leaflet-groupedlayercontrol-->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css" />
+	 <script src="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js"></script>
+
+	 
+	 <!--Подключаем библиотеку Font Awesome версия 4.7.0-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	 
+	 <!--Подключаем плагин Leaflet.fullscreen-->
+	 <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" />
+	 <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+	 
+	 <!--Подключение плагина Leaflet.EasyButton-->
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+	 <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+	 
+	 <!-- Подключаем плагин leaflet-search -->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+	 <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+
+   </head>
+   
+   <body>
+      <!--Верхняя часть страницы сайта (Шапка)-->
+	  <div id = "header">
+		<!--Заголовок 1-го уровня-->
+		<h1>Карта Уральского федерального округа</h1>
+	  </div>
+	  
+	  <!--Блок содержания сайта-->
+	  <div id = "main-container">
+	  
+		<!--Блок с картой-->
+		<div id = "map-container">
+			<!--Сама карта-->
+			<div id = "map"></div>
+		</div>
+		
+		<!--Блок текста-->
+		<div id = "text-container">
+			<!--Заголовок 2-го уровня-->
+			<h2>Уральский федеральный округ</h2>
+			<!--Абзац-->
+			<p>
+				 федеральный округ Российской Федерации, в пределах Урала и Западной Сибири. Образован Указом президента РФ от 13 мая 2000 года. В состав округа входят 6 субъектов РФ.Территория округа составляет 10,62 % от территории России.
+В округе, как и в ЦФО, отсутствуют республики, только области (включая Ямало-Ненецкий автономный округ и Ханты-Мансийский автономный округ — Югра, которые входят в состав Тюменской области). Является наименьшим среди федеральных округов по количеству субъектов.
+			</p>
+			
+			<h2>Основные характеристики</h2>
+			<p>
+				На территории федерального округа действует 1164 муниципальных образования.
+Наиболее высокой степенью урбанизации характеризуются Свердловская и Челябинская области. Плотность населения — 6,75 чел./км² (в среднем по России: 8,53 чел./км²).
+Наибольшей плотностью населения отличается центральная и южная части федерального округа, где плотность достигает 42 чел/км². Такое положение дел объясняется особенностями географического положения регионов и структурой их промышленного производства.
+Большинство субъектов Уральского ФО обладает крупными месторождениями минерального сырья. В Ханты-Мансийском и Ямало-Ненецком автономных округах разведаны и эксплуатируются нефтяные и газовые месторождения, относящиеся к Западно-Сибирской нефтегазоносной провинции, в которой сосредоточено 66,7 % запасов нефти России (6 % — мировых) и 77,8 % газа России (26 % мировых запасов).
+По лесистости округ уступает только Сибири и Дальнему Востоку. 
+			</p>
+			<p>
+				Уральский федеральный округ располагает 10 % общероссийских запасов лесонасаждений. В структуре леса преобладают хвойные леса. Потенциальные возможности заготовки древесины свыше 50 млн м³.
+Земельный фонд на 1 января 2019 года — 182 млн га.
+Протяжённость сухопутной государственной границы — более 1300 км, плюс морская граница на севере.
+			</p>
+		</div>
+	  
+	  </div>
+	  
+	  <!--Нижняя часть страницы (Подвал)-->
+	  <div id = "footer">
+		Карта подготовлена студенткой КиГ-4-2б Рустаевой С.И.
+		</br> <!--Перенос строки-->
+		МИИГАиК, 2025
+	  </div>
+	  
+	 <!--Подключение скриптов Leaflet-->
+	  <script src="script.js"></script>
+	  
+	  
+	  </script>
+   </body>
+</html>

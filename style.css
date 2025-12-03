@@ -79,10 +79,14 @@ body {
 
 /* Блок карты (левая половина) */
 #map-container {
-    width: 80%; /* Ширина блока map-container относительно блока main-container*/
+    width: 100%; /* Ширина блока map-container относительно блока main-container*/
 	height: 100%; /* Высота блока map-container относительно блока main-container */
     background-color: #252525; /* Фоновый цвет блока */
     position: relative; /* Тип позиционирования блока: относительное */
+}
+
+.leaflet-right {
+    right: 30%;
 }
 
 /* Непосредственно карта */
@@ -132,6 +136,7 @@ body {
     z-index: 100; /* Уровень перекрытия — поверх большинства других элементов (как у шапки) */
     position: relative; /* Тип позиционирования блока: относительное */
 }
+
 
 
 

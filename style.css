@@ -156,3 +156,8 @@ body {
     clear: both;
 }
 
+.legend li {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+}

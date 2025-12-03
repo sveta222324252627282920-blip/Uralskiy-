@@ -51,15 +51,15 @@ body {
     overflow: hidden; /* содержимое, выходящее за границы страницы, обрезается по границам без прокрутки */
 }
 
-/* Шапка */
+
 #header {
-    background: linear-gradient(135deg, #52162eab 0%, #662e6b 100%); /* Окраска фона. В данном случае применен градиент (хотя может быть просто цвет) */
-    color: #000000; /* Цвет текста */
-    padding: 20px; /* Внутренний отступ вокруг содержимого */
-    text-align: center; /* Выравнивание текста */
-	box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Тень для визуального отделения от соседних блоков */
-    z-index: 100; /* Уровень перекрытия — поверх большинства других элементов */
-    position: relative; /* Тип позиционирования блока: относительное */
+    background: linear-gradient(135deg, #52162eab 0%, #662e6b 100%);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    position: relative;
 }
 
 /* Заголовки 1-го уровня в Шапке */
@@ -95,17 +95,19 @@ body {
     z-index: 1; /* Уровень перекрытия — ниже других элементов */
 }
 
-/* Блок текста (правая половина) */
 #text-container {
-   #header {
-    background: linear-gradient(135deg, #52162eab 0%, #662e6b 100%);
-    color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    z-index: 100;
-    position: relative;
-
+    width: 30%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    /* background-color: #87CEEB; */
+    padding: 30px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, .3);
+    --webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(10px);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
 
 /* Заголовки 2-го уровня в Блоке текста */
@@ -134,3 +136,4 @@ body {
     position: relative; /* Тип позиционирования блока: относительное */
 
 }
+

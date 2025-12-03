@@ -51,15 +51,15 @@ body {
     overflow: hidden; /* содержимое, выходящее за границы страницы, обрезается по границам без прокрутки */
 }
 
-
+/* Шапка */
 #header {
-    background: linear-gradient(135deg, #52162eab 0%, #662e6b 100%);
-    color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    z-index: 100;
-    position: relative;
+    background: linear-gradient(135deg, #98FB98 0%, #32CD32 100%); /* Окраска фона. В данном случае применен градиент (хотя может быть просто цвет) */
+    color: #000000; /* Цвет текста */
+    padding: 20px; /* Внутренний отступ вокруг содержимого */
+    text-align: center; /* Выравнивание текста */
+	box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Тень для визуального отделения от соседних блоков */
+    z-index: 100; /* Уровень перекрытия — поверх большинства других элементов */
+    position: relative; /* Тип позиционирования блока: относительное */
 }
 
 /* Заголовки 1-го уровня в Шапке */
@@ -95,24 +95,20 @@ body {
     z-index: 1; /* Уровень перекрытия — ниже других элементов */
 }
 
+/* Блок текста (правая половина) */
 #text-container {
-    width: 30%;
-    height: 100%;
-    right: 0;
-    position: absolute;
-    /* background-color: #87CEEB; */
-    padding: 30px;
-    overflow-y: auto;
-    background: rgba(255, 255, 255, .3);
-    --webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(10px);
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
-    z-index: 10;
+    width: 30%; /* Ширина блока text-container относительно блока main-container */
+	height: 100%; /* Высота блока map-container относительно блока main-container */
+    background-color: #87CEEB; /* Фоновый цвет блока */
+    padding: 30px; /* Внутренний отступ */
+    overflow-y: auto; /* Включить вертикальную прокрутка, если содержимое не помещается в блок */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3); /* Тень для отделения от карты */
+    z-index: 10; /* Уровень перекрытия — выше карты, но ниже других элементов */
 }
 
 /* Заголовки 2-го уровня в Блоке текста */
 #text-container h2 {
-    color: #6a0086; /* Цвет */
+    color: #0000FF; /* Цвет */
     margin-bottom: 15px; /* Отступ снизу */
     font-size: 20px; /* Размер шрифта */
 }
@@ -126,7 +122,7 @@ body {
 
 /* Подвал */
 #footer {
-    background: linear-gradient(135deg,  #521617 0%, #662e6b 100%); /* Окраска фона. В данном случае применен градиент (хотя может быть просто цвет) */
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%); /* Окраска фона. В данном случае применен градиент (хотя может быть просто цвет) */
     color: #b0b0b0; /* Цвет текста */
     padding: 15px; /* Внутренний отступ вокруг содержимого */
     text-align: center; /* Выравнивание текста */
@@ -134,6 +130,4 @@ body {
     font-size: 14px; /* Размер шрифта */
     z-index: 100; /* Уровень перекрытия — поверх большинства других элементов (как у шапки) */
     position: relative; /* Тип позиционирования блока: относительное */
-
 }
-
